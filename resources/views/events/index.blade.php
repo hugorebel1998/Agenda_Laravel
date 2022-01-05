@@ -6,9 +6,10 @@
         <div id="agenda">
 
         </div>
+    </div>
 
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#evento">
+         <!-- Button trigger modal -->
+         <button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#evento">
             Launch demo modal
         </button>
 
@@ -23,11 +24,8 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form action="" method="post">
-                            <div class="form-group">
-                                <label for="id">ID</label>
-                                <input type="text" name="id" id="id" class="form-control" aria-describedby="helpId">
-                            </div>
+                        <form action="" id="formCallender">
+                             {{ csrf_field() }}
 
                             <div class="form-group">
                                 <label for="title">Titulo</label>
@@ -58,6 +56,5 @@
                 </div>
             </div>
         </div>
-    </div>
 
 @endsection
